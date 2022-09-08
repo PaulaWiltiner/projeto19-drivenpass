@@ -1,11 +1,7 @@
 import { Router } from "express";
-import cardRouter from "./cardRouter";
-import refillRouter from "./purchaseRouter";
-import purchaseRouter from "./refillRouter";
+import authRouter from "./authRouter";
 
 const router = Router();
-router.use(cardRouter);
-router.use(purchaseRouter);
-router.use(refillRouter);
+router.use(authRouter);
 
 export default router;
