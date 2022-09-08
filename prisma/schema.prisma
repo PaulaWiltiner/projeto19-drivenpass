@@ -15,6 +15,8 @@ model credentials {
   password String
   userId   Int
   users    users  @relation(fields: [userId], references: [id])
+  titleId  Int
+  title    titles @relation(fields: [titleId], references: [id])
 }
 
 
@@ -28,7 +30,13 @@ model users {
 
 model sessions {
   id       Int    @id @default(autoincrement()) 
-  token    String  
+  token    String @unique
   user     users  @relation(fields: [userId], references: [id])
   userId   Int   
+}
+
+model titles {
+  id       Int    @id @default(autoincrement()) 
+  title    String  
+  credentials credentials[]
 }
