@@ -5,9 +5,8 @@ import Cryptr from "cryptr";
 export async function createCredential(url:string,name:string,newPassword:string,title:string,token:string){
   const userId=await authenticateToken(token);
   const findOne=await findByTitleandUserId(title,userId);
-  console.log('find')
-  console.log(findOne)
-  if (findOne) {
+ 
+  if (findOne.length!==0) {
     throw {code:'Conflict' , message:'title already existis'}
   }
 
