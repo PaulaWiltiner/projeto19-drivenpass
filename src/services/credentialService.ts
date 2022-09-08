@@ -45,21 +45,13 @@ export async function createCredential(url:string,name:string,newPassword:string
  export async function getCredentials(token:string){
   const userId=await authenticateToken(token);
   const result = await find(userId);
-  // const response = result.map((item:any) => {
-  //   item["customer"] = {
-  //     id: Number(listCustomer[0]),
-  //     name: listCustomer[1],
-  //   };
-  //   const listGame = item.game.replace(/[\\"()]/g, "").split(",", 4);
-  //   item["game"] = {
-  //     id: Number(listGame[0]),
-  //     name: listGame[1],
-  //     categoryId: Number(listGame[2]),
-  //     categoryName: listGame[3],
-  //   };
-  //   return item;
-  // });
-  return result
+  const cryptr = new Cryptr('cardTotallySecretKey');
+  const response = result.map((item:any) => {
+    const decryptedPass = cryptr.decrypt(item.password);
+    item["password"] = decryptedPass
+    return item;
+  });
+  return response
  }
 
  export async function deleteCredential(id:number,token:string){
