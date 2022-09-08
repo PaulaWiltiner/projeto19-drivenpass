@@ -15,8 +15,8 @@ model credentials {
   password String
   userId   Int
   users    users  @relation(fields: [userId], references: [id])
-  titleId  Int
-  title    titles @relation(fields: [titleId], references: [id])
+  title    String
+   @@unique([userId,title])
 }
 
 
@@ -35,8 +35,3 @@ model sessions {
   userId   Int   
 }
 
-model titles {
-  id       Int    @id @default(autoincrement()) 
-  title    String  
-  credentials credentials[]
-}

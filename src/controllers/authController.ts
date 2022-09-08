@@ -19,6 +19,8 @@ export async function signIn(req:Request, res:Response) {
 }
 
 export async function signOut(req:Request, res:Response) {
-  await authService.signOut
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+  await authService.signOut(token)
   return res.sendStatus(200);
   }

@@ -1,7 +1,8 @@
 
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { findByEmail , insertSession, insertUser} from "../repositories/authRepository";
+import { deletesSession, findByEmail , insertSession, insertUser} from "../repositories/authRepository";
+import { authenticateToken } from "../utils/verifications";
 
 export async function signUp(email:string,password:string){
 
@@ -50,8 +51,9 @@ export async function signIn(email:string,password:string){
 
 }
 
-export async function signOut(email:string,password:string){
+export async function signOut(token:string){
 
-  
+ await authenticateToken(token);
+ await deletesSession(token)
 
 }
