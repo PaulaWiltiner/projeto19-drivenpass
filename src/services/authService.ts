@@ -34,13 +34,13 @@ export async function signIn(email:string,password:string){
 
   if (bcrypt.compareSync(password, user.password)) {
   
-    const token = jwt.sign(
+    const token:string = jwt.sign(
       { id: user.id, email: user.email },
       process.env.ACCESS_TOKEN
     );
 
     const dataList = {
-      userId: user.id, token
+      token,userId: user.id
     }
     await insertSession(dataList);
     return dataList
