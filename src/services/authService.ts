@@ -1,12 +1,14 @@
 
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import { findByEmail , insertUser} from "../repositories/authRepository";
 
 export async function signUp(email:string,password:string){
 
-  const { rows: isEmail } = await validateEmail(email);
+  const isEmail = await findByEmail(email);
+  console.log(isEmail)
 
-  if (isEmail.length > 0) {
+  if (isEmail) {
     throw {code:'Conflict' , message:'email is already being used'}
   }
 
@@ -21,3 +23,14 @@ export async function signUp(email:string,password:string){
 
 }
 
+export async function signIn(email:string,password:string){
+
+  
+
+}
+
+export async function signOut(email:string,password:string){
+
+  
+
+}
