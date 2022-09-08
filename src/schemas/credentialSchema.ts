@@ -5,6 +5,6 @@ export const credentialSchema = Joi.object({
     scheme: ["https"],
   }),
   name:Joi.string().min(3).required(),
-  password: Joi.string().min(10).required(),
+  password: Joi.string().min(4).required(),
   title: Joi.string().min(10).required()
 });
