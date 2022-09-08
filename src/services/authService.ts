@@ -1,7 +1,7 @@
 
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { findByEmail , insertUser} from "../repositories/authRepository";
+import { findByEmail , insertSession, insertUser} from "../repositories/authRepository";
 
 export async function signUp(email:string,password:string){
 
@@ -25,7 +25,26 @@ export async function signUp(email:string,password:string){
 
 export async function signIn(email:string,password:string){
 
+  const user = await findByEmail(email);
   
+
+  if (user) {
+    throw {code:'NotFound' , message:'user not found'}
+  }
+
+  if (bcrypt.compareSync(password, user.password)) {
+  
+    const token = jwt.sign(
+      { id: user.id, email: user.email },
+      process.env.ACCESS_TOKEN
+    );
+
+    const dataList = {
+      userId: user.id, token
+    }
+    await insertSession(dataList);
+    return dataList
+  }
 
 }
 

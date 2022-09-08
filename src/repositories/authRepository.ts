@@ -1,5 +1,5 @@
 import  client  from "../config/prisma";
-import { TUsers } from "../types/AuthTypes";
+import { TSessions, TUsers } from "../types/AuthTypes";
 
 export async function findByEmail(email:string) {
   const result = await client.users.findUnique({
@@ -16,4 +16,38 @@ export async function insertUser(dataList:TUsers) {
     data: dataList
   });
 
+}
+
+export async function findUser(dataList:TUsers) {
+  const result = await client.users.findUnique({
+    where: dataList
+  })
+  
+  return result;
+}
+
+export async function insertSession(dataList:TSessions) {
+  await client.sessions.create({
+    data: dataList
+  });
+}
+
+export async function findSession(token:string) {
+  const result = await client.sessions.findUnique({
+    where: {
+      token
+    }
+  })
+  
+  return result;
+}
+
+export async function deletesSession(token:string) {
+  const result = await client.sessions.delete({
+    where: {
+      token
+    }
+  })
+  
+  return result;
 }

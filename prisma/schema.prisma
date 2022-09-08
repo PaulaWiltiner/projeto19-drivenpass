@@ -28,7 +28,7 @@ model users {
 
 model sessions {
   id       Int    @id @default(autoincrement()) 
-  token    Int
+  token    String  
   user     users  @relation(fields: [userId], references: [id])
   userId   Int   
 }
