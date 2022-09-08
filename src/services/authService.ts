@@ -44,6 +44,8 @@ export async function signIn(email:string,password:string){
     }
     await insertSession(dataList);
     return dataList
+  }else{
+    throw {code:'NotFound' , message:'incorrect password'}
   }
 
 }
