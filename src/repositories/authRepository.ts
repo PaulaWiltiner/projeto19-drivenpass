@@ -32,7 +32,7 @@ export async function insertSession(dataList:TSessions) {
   });
 }
 
-export async function findSession(token:string) {
+export async function findSession(token:any) {
   const result = await client.sessions.findUnique({
     where: {
       token
@@ -42,7 +42,7 @@ export async function findSession(token:string) {
   return result;
 }
 
-export async function deletesSession(token:string) {
+export async function deletesSession(token:any) {
   const result = await client.sessions.delete({
     where: {
       token
