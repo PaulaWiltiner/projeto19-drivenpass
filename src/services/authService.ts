@@ -27,8 +27,8 @@ export async function signIn(email:string,password:string){
 
   const user = await findByEmail(email);
   
-
-  if (user) {
+  console.log(user)
+  if (!user) {
     throw {code:'NotFound' , message:'user not found'}
   }
 
