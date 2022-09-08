@@ -2,13 +2,12 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { deletesSession, findByEmail , insertSession, insertUser} from "../repositories/authRepository";
-import { authenticateToken } from "../utils/verifications";
+import { authenticateToken } from "../utils/authVerification";
 
 export async function signUp(email:string,password:string){
 
   const isEmail = await findByEmail(email);
-  console.log(isEmail)
-
+  
   if (isEmail) {
     throw {code:'Conflict' , message:'email is already being used'}
   }
@@ -28,7 +27,6 @@ export async function signIn(email:string,password:string){
 
   const user = await findByEmail(email);
   
-  console.log(user)
   if (!user) {
     throw {code:'NotFound' , message:'user not found'}
   }

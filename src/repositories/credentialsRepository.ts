@@ -1,4 +1,4 @@
-import { number } from "joi";
+
 import  client  from "../config/prisma";
 import { TCredentials } from "../types/CredentialTypes";
 
@@ -42,7 +42,7 @@ export async function find(userId:number){
   return result;
 }
 
-export async function deleteCredential(id:number,userId:number){
+export async function deleteById(id:number){
   await client.credentials.delete({
    where:{
     id
