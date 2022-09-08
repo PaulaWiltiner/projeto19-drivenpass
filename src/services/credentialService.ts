@@ -57,6 +57,9 @@ export async function createCredential(url:string,name:string,newPassword:string
  export async function deleteCredential(id:number,token:string){
   const userId=await authenticateToken(token);
   const result= await findById(id);
+  if(!result){
+    throw {code:'NotFound' , message:'Credential not found'}
+  }
   if(userId!==result.userId){
     throw {code:'Unathorized' , message:'user unathorized'}
   }
