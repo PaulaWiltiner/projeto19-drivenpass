@@ -1,4 +1,4 @@
-import { findByTitleandUserId, insertCards, findById, find, deleteById } from "../repositories/cardsRepository";
+import { findByTitleandUserId, insertCards, findById, find, deleteById, findType } from "../repositories/cardsRepository";
 import { authenticateToken } from "../utils/authVerification";
 import Cryptr from "cryptr";
 import { TCards } from "../types/CardsTypes";
@@ -6,7 +6,10 @@ import { TCards } from "../types/CardsTypes";
 export async function createCards(data:TCards, token:string){
   const userId=await authenticateToken(token);
   const findOne=await findByTitleandUserId(data.title,userId);
- 
+  const findTyp = await findType(data.type)
+  if (!findTyp) {
+    throw {code:'NotFound' , message:'type not existis'}
+  }
   if (findOne.length!==0) {
     throw {code:'Conflict' , message:'title already existis'}
   }
@@ -34,7 +37,9 @@ export async function createCards(data:TCards, token:string){
   }
   const cryptr = new Cryptr('cardTotallySecretKey');
   const decryptedPass = cryptr.decrypt(result.password);
+  const decryptedCvc = cryptr.decrypt(result.cvc);
   result["password"] = decryptedPass ;
+  result["cvc"] = decryptedCvc ;
       
 
   return result
@@ -46,7 +51,9 @@ export async function createCards(data:TCards, token:string){
   const cryptr = new Cryptr('cardTotallySecretKey');
   const response = result.map((item:any) => {
     const decryptedPass = cryptr.decrypt(item.password);
-    item["password"] = decryptedPass
+    const decryptedCvc = cryptr.decrypt(item.cvc);
+    item["password"] = decryptedPass ;
+    item["cvc"] = decryptedCvc ;
     return item;
   });
   return response
