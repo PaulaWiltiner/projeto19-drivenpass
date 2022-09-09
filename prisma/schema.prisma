@@ -27,6 +27,7 @@ model users {
   credentials    credentials[]
   sessions       sessions[]
   securityNotes  securityNotes[]
+  wifis           wifis[]
 }
 
 model sessions {
@@ -43,5 +44,13 @@ model securityNotes {
   title    String
   text     String
    @@unique([userId,title])
+}
+
+model wifis {
+  id       Int    @id @default(autoincrement())
+  userId   Int
+  users    users  @relation(fields: [userId], references: [id])
+  name     String
+  password String
 }
 
