@@ -50,3 +50,13 @@ export async function deleteById(id:number){
   })
   
 }
+
+export async function findType(id:number){
+  const result = await client.cardType.findUnique({
+   where:{
+    id
+   }
+  })
+  
+  return result;
+}
