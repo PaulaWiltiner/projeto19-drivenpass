@@ -24,8 +24,9 @@ model users {
   id       Int    @id @default(autoincrement())
   email    String @unique
   password String
-  credentials credentials[]
-  sessions sessions[]
+  credentials    credentials[]
+  sessions       sessions[]
+  securityNotes  securityNotes[]
 }
 
 model sessions {
@@ -33,5 +34,14 @@ model sessions {
   token    String @unique
   user     users  @relation(fields: [userId], references: [id])
   userId   Int   
+}
+
+model securityNotes {
+  id       Int    @id @default(autoincrement())
+  userId   Int
+  users    users  @relation(fields: [userId], references: [id])
+  title    String
+  text     String
+   @@unique([userId,title])
 }
 
