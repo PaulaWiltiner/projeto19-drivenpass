@@ -19,6 +19,7 @@ export async function createCards(data:TCards, token:string){
   const cvc= cryptr.encrypt(data.cvc);
   data["password"]=password;
   data["cvc"]=cvc;
+  data.userId=userId;
 
   const dataList=data
   await insertCards(dataList)
