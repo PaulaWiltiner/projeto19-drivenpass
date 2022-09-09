@@ -28,6 +28,7 @@ model users {
   sessions       sessions[]
   securityNotes  securityNotes[]
   wifis           wifis[]
+  cards          cards[]
 }
 
 model sessions {
@@ -54,3 +55,24 @@ model wifis {
   password String
 }
 
+model cards {
+  id       Int    @id @default(autoincrement())
+  userId   Int
+  users    users  @relation(fields: [userId], references: [id])
+  title    String
+  number   BigInt
+  name     String
+  cvc      String
+  password String
+  expirationDate String
+  isVirtual Boolean
+  type      Int
+  cardType cardType @relation(fields: [type], references: [id])
+   @@unique([userId,title])
+}
+
+model  cardType {
+  id       Int   @id @default(autoincrement())
+  type     String
+  cards    cards[]
+}
