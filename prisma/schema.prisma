@@ -60,7 +60,7 @@ model cards {
   userId   Int
   users    users  @relation(fields: [userId], references: [id])
   title    String
-  number   BigInt
+  number   String
   name     String
   cvc      String
   password String
