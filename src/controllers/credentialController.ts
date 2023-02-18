@@ -4,6 +4,7 @@ import { TCredentials } from "../types/CredentialTypes";
 
 
 export async function createCredential(req:Request, res:Response) {
+  
   const { url, name, password , title} : TCredentials = req.body;
   const authHeader = req.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];

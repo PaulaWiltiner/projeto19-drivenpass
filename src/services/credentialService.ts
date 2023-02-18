@@ -44,14 +44,18 @@ export async function createCredential(url:string,name:string,newPassword:string
 
  export async function getCredentials(token:string){
   const userId=await authenticateToken(token);
+  
   const result = await find(userId);
   const cryptr = new Cryptr('cardTotallySecretKey');
-  const response = result.map((item:any) => {
+  
+  const resp = result.map((item:any) => {
     const decryptedPass = cryptr.decrypt(item.password);
     item["password"] = decryptedPass
     return item;
+  
   });
-  return response
+  
+  return resp
  }
 
  export async function deleteCredential(id:number,token:string){
@@ -60,6 +64,7 @@ export async function createCredential(url:string,name:string,newPassword:string
   if(!result){
     throw {code:'NotFound' , message:'Credential not found'}
   }
+  
   if(userId!==result.userId){
     throw {code:'Unathorized' , message:'user unathorized'}
   }

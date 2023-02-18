@@ -1,5 +1,5 @@
 
-import  client  from "../config/prisma";
+import  {client}  from "../config/prisma";
 import { TSecurityNotes } from "../types/SecurityNotesTypes";
 
 

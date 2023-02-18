@@ -1,4 +1,4 @@
-import  client  from "../config/prisma";
+import { client } from "../config/prisma";
 import { TSessions, TUsers } from "../types/AuthTypes";
 
 export async function findByEmail(email:string) {
@@ -42,12 +42,4 @@ export async function findSession(token:any) {
   return result;
 }
 
-export async function deletesSession(token:any) {
-  const result = await client.sessions.delete({
-    where: {
-      token
-    }
-  })
-  
-  return result;
-}
+

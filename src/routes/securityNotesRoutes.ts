@@ -3,6 +3,9 @@ import { createSecurityNote, deleteSecurityNote, getSecurityNoteId, getSecurityN
 import { validateSchema } from "../middlewares/schemaValidate";
 import { securityNoteSchema } from "../schemas/securityNoteSchema";
 const securityNotesRouter = Router();
+import { authenticateToken } from "../middlewares/authentication-middleware";
+
+securityNotesRouter.all("/*", authenticateToken)
 
 securityNotesRouter.post("/securityNotes",validateSchema(securityNoteSchema), createSecurityNote);
 securityNotesRouter.get("/securityNotes/:id",getSecurityNoteId)

@@ -1,5 +1,5 @@
 
-import  client  from "../config/prisma";
+import  {client } from "../config/prisma";
 import { TWifis } from "../types/WifisTypes";
 
 

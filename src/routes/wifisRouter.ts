@@ -3,6 +3,9 @@ import { createWifi, deleteWifi, getWifiId, getWifis } from "../controllers/wifi
 import { validateSchema } from "../middlewares/schemaValidate";
 import { wifiSchema } from "../schemas/wifiSchema";
 const WifisRouter = Router();
+import { authenticateToken } from "../middlewares/authentication-middleware";
+
+WifisRouter.all("/*", authenticateToken)
 
 WifisRouter.post("/Wifis",validateSchema(wifiSchema), createWifi);
 WifisRouter.get("/Wifis/:id",getWifiId)

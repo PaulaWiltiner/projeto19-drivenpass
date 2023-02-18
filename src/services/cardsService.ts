@@ -36,7 +36,7 @@ export async function createCards(data:TCards, token:string){
   if(userId!==result.userId){
     throw {code:'Unathorized' , message:'user unathorized'}
   }
-  console.log(result)
+  
   const cryptr = new Cryptr('cardTotallySecretKey');
   const decryptedPass = cryptr.decrypt(result.password);
   const decryptedCvc = cryptr.decrypt(result.cvc);

@@ -1,7 +1,6 @@
 
-import  client  from "../config/prisma";
+import { client } from "../config/prisma";
 import { TCards } from "../types/CardsTypes";
-
 
 export async function insertCards(dataList:TCards){
   const result = await client.cards.create({

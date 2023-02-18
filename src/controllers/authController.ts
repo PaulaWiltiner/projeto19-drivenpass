@@ -5,6 +5,7 @@ import * as authService from "../services/authService"
 export async function signUp(req:Request, res:Response) {
   const { email, password } : {email:string, password:string} = req.body;
 
+  if(!email) return res.sendStatus(401);
   await authService.signUp(email,password)
 
   res.sendStatus(201);
@@ -15,12 +16,7 @@ export async function signIn(req:Request, res:Response) {
 
   const result=await authService.signIn(email,password)
 
-  res.send(result).status(200);
+  res.status(200).send(result);
 }
 
-export async function signOut(req:Request, res:Response) {
-  const authHeader = req.headers["authorization"];
-  const token = authHeader && authHeader.split(" ")[1];
-  await authService.signOut(token)
-  return res.sendStatus(200);
-  }
+
