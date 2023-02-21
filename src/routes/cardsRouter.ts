@@ -5,7 +5,7 @@ import { cardsSchema } from "../schemas/cardsSchema";
 const cardsRouter = Router();
 import { authenticateToken } from "../middlewares/authentication-middleware";
 
-cardsRouter.all("/*", authenticateToken)
+
 cardsRouter.post("/cards",validateSchema(cardsSchema), createCards);
 cardsRouter.get("/cards/:id",getCardId)
 cardsRouter.get("/cards",getCards)

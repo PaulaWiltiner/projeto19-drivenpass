@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676728135227" clover="3.2.0">
-  <project timestamp="1676728135227" name="All files">
-    <metrics statements="519" coveredstatements="369" conditionals="73" coveredconditionals="34" methods="79" coveredmethods="43" elements="671" coveredelements="446" complexity="0" loc="519" ncloc="519" packages="9" files="35" classes="35"/>
+<coverage generated="1676977822629" clover="3.2.0">
+  <project timestamp="1676977822629" name="All files">
+    <metrics statements="515" coveredstatements="375" conditionals="72" coveredconditionals="36" methods="79" coveredmethods="46" elements="666" coveredelements="457" complexity="0" loc="515" ncloc="515" packages="9" files="35" classes="35"/>
     <package name="src">
       <metrics statements="25" coveredstatements="19" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="app.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/app.ts">
         <metrics statements="20" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
       </file>
       <file name="server.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/server.ts">
         <metrics statements="5" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -40,63 +40,62 @@
       <metrics statements="13" coveredstatements="12" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="2"/>
       <file name="envs.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/config/envs.ts">
         <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="6" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="6" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/config/index.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
       </file>
       <file name="prisma.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/config/prisma.ts">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="106" coveredstatements="64" conditionals="33" coveredconditionals="16" methods="18" coveredmethods="9"/>
+      <metrics statements="105" coveredstatements="67" conditionals="32" coveredconditionals="16" methods="18" coveredmethods="10"/>
       <file name="authController.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/controllers/authController.ts">
-        <metrics statements="10" coveredstatements="6" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="8" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="5" type="stmt"/>
-        <line num="17" count="5" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
       </file>
       <file name="cardsController.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/controllers/cardsController.ts">
         <metrics statements="24" coveredstatements="5" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="34" count="0" type="stmt"/>
@@ -105,25 +104,25 @@
       </file>
       <file name="credentialController.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/controllers/credentialController.ts">
         <metrics statements="24" coveredstatements="24" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
         <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="19" count="3" type="stmt"/>
         <line num="20" count="3" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
         <line num="33" count="3" type="stmt"/>
         <line num="34" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="35" count="3" type="stmt"/>
@@ -132,25 +131,25 @@
       </file>
       <file name="securityNotesController.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/controllers/securityNotesController.ts">
         <metrics statements="24" coveredstatements="5" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="34" count="0" type="stmt"/>
@@ -159,25 +158,25 @@
       </file>
       <file name="wifisController.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/controllers/wifisController.ts">
         <metrics statements="24" coveredstatements="24" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="16" count="3" type="stmt"/>
         <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="18" count="3" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
         <line num="32" count="3" type="stmt"/>
         <line num="33" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="34" count="3" type="stmt"/>
@@ -186,278 +185,275 @@
       </file>
     </package>
     <package name="src.middlewares">
-      <metrics statements="33" coveredstatements="31" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <metrics statements="34" coveredstatements="31" conditionals="8" coveredconditionals="7" methods="6" coveredmethods="6"/>
       <file name="authentication-middleware.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/middlewares/authentication-middleware.ts">
-        <metrics statements="15" coveredstatements="15" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="60" type="stmt"/>
-        <line num="9" count="60" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="52" type="stmt"/>
-        <line num="12" count="52" type="cond" truecount="0" falsecount="1"/>
-        <line num="14" count="52" type="stmt"/>
-        <line num="15" count="52" type="stmt"/>
-        <line num="17" count="44" type="stmt"/>
-        <line num="22" count="44" type="cond" truecount="1" falsecount="0"/>
-        <line num="24" count="36" type="stmt"/>
-        <line num="26" count="36" type="stmt"/>
-        <line num="28" count="8" type="stmt"/>
-        <line num="33" count="24" type="stmt"/>
+        <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="51" type="stmt"/>
+        <line num="9" count="51" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="43" type="stmt"/>
+        <line num="13" count="43" type="stmt"/>
+        <line num="14" count="43" type="stmt"/>
+        <line num="16" count="35" type="stmt"/>
+        <line num="21" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="27" type="stmt"/>
+        <line num="25" count="27" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="32" count="24" type="stmt"/>
       </file>
       <file name="errorHandler.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/middlewares/errorHandler.ts">
-        <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="14" type="cond" truecount="1" falsecount="0"/>
+        <metrics statements="12" coveredstatements="9" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="17" type="cond" truecount="1" falsecount="0"/>
         <line num="6" count="4" type="stmt"/>
-        <line num="8" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="13" type="cond" truecount="1" falsecount="0"/>
         <line num="9" count="6" type="stmt"/>
-        <line num="11" count="4" type="cond" truecount="0" falsecount="1"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="14" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="4" type="stmt"/>
+        <line num="11" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
       </file>
       <file name="schemaValidate.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/middlewares/schemaValidate.ts">
         <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="18" type="stmt"/>
-        <line num="6" count="11" type="stmt"/>
-        <line num="7" count="11" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="10" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="17" count="7" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="24" type="stmt"/>
+        <line num="7" count="16" type="stmt"/>
+        <line num="8" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories">
-      <metrics statements="77" coveredstatements="54" conditionals="0" coveredconditionals="0" methods="26" coveredmethods="13"/>
+      <metrics statements="77" coveredstatements="55" conditionals="0" coveredconditionals="0" methods="26" coveredmethods="14"/>
       <file name="authRepository.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/repositories/authRepository.ts">
-        <metrics statements="14" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
+        <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="16" type="stmt"/>
         <line num="42" count="16" type="stmt"/>
       </file>
       <file name="cardsRepository.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/repositories/cardsRepository.ts">
         <metrics statements="18" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
-        <line num="44" count="3" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
       </file>
       <file name="credentialsRepository.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/repositories/credentialsRepository.ts">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="6" type="stmt"/>
         <line num="32" count="6" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
       </file>
       <file name="securityNotesRepository.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/repositories/securityNotesRepository.ts">
         <metrics statements="15" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
       </file>
       <file name="wifisRepository.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/repositories/wifisRepository.ts">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="6" type="stmt"/>
         <line num="32" count="6" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="69" coveredstatements="69" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="65" coveredstatements="65" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="authRouter.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/routes/authRouter.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
       </file>
       <file name="cardsRouter.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/routes/cardsRouter.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
       </file>
       <file name="credentialsRouter.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/routes/credentialsRouter.ts">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/routes/index.ts">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
       <file name="securityNotesRoutes.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/routes/securityNotesRoutes.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
       </file>
       <file name="wifisRouter.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/routes/wifisRouter.ts">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.schemas">
       <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="cardsSchema.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/schemas/cardsSchema.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
       </file>
       <file name="credentialSchema.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/schemas/credentialSchema.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
       </file>
       <file name="securityNoteSchema.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/schemas/securityNoteSchema.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
       </file>
       <file name="signUpSchema.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/schemas/signUpSchema.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
       </file>
       <file name="wifiSchema.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/schemas/wifiSchema.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="180" coveredstatements="105" conditionals="25" coveredconditionals="11" methods="21" coveredmethods="11"/>
+      <metrics statements="180" coveredstatements="111" conditionals="25" coveredconditionals="12" methods="21" coveredmethods="12"/>
       <file name="authService.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/services/authService.ts">
-        <metrics statements="20" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="27" count="5" type="stmt"/>
         <line num="29" count="5" type="cond" truecount="1" falsecount="0"/>
         <line num="30" count="1" type="stmt"/>
@@ -470,10 +466,10 @@
       </file>
       <file name="cardsService.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/services/cardsService.ts">
         <metrics statements="51" coveredstatements="7" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
@@ -489,7 +485,7 @@
         <line num="22" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="29" count="3" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="33" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -502,7 +498,7 @@
         <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
@@ -513,7 +509,7 @@
         <line num="58" count="0" type="stmt"/>
         <line num="59" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
         <line num="66" count="0" type="stmt"/>
         <line num="67" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -524,10 +520,10 @@
       </file>
       <file name="credentialService.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/services/credentialService.ts">
         <metrics statements="40" coveredstatements="39" conditionals="5" coveredconditionals="4" methods="5" coveredmethods="5"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="cond" truecount="0" falsecount="1"/>
@@ -536,7 +532,7 @@
         <line num="14" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
         <line num="29" count="3" type="stmt"/>
         <line num="31" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -547,7 +543,7 @@
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
@@ -556,7 +552,7 @@
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
-        <line num="61" count="3" type="stmt"/>
+        <line num="61" count="4" type="stmt"/>
         <line num="62" count="3" type="stmt"/>
         <line num="63" count="3" type="stmt"/>
         <line num="64" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -567,16 +563,16 @@
       </file>
       <file name="securityNotesService.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/services/securityNotesService.ts">
         <metrics statements="29" coveredstatements="6" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="9" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="10" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="26" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -584,11 +580,11 @@
         <line num="29" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="30" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -599,10 +595,10 @@
       </file>
       <file name="wifiService.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/services/wifiService.ts">
         <metrics statements="40" coveredstatements="39" conditionals="5" coveredconditionals="4" methods="5" coveredmethods="5"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="cond" truecount="0" falsecount="1"/>
@@ -611,7 +607,7 @@
         <line num="14" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
         <line num="27" count="3" type="stmt"/>
         <line num="29" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -622,7 +618,7 @@
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
@@ -631,7 +627,7 @@
         <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
         <line num="56" count="3" type="stmt"/>
         <line num="57" count="3" type="stmt"/>
         <line num="58" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -645,8 +641,8 @@
       <metrics statements="6" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="authVerification.ts" path="/home/duda/Projetos/projeto19-drivenpass/src/utils/authVerification.ts">
         <metrics statements="6" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
         <line num="6" count="16" type="stmt"/>
         <line num="8" count="16" type="cond" truecount="0" falsecount="1"/>
         <line num="9" count="0" type="stmt"/>

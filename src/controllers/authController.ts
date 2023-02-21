@@ -3,9 +3,10 @@ import * as authService from "../services/authService"
 
 
 export async function signUp(req:Request, res:Response) {
+
   const { email, password } : {email:string, password:string} = req.body;
 
-  if(!email) return res.sendStatus(401);
+
   await authService.signUp(email,password)
 
   res.sendStatus(201);
