@@ -6,11 +6,8 @@ import { createSession } from "./factories/sessions-factory";
 import { client } from "@/config";
 
 export async function cleanDb() {
-  await client.cardType.deleteMany({});
-  await client.cards.deleteMany({});
   await client.credentials .deleteMany({});
   await client.wifis.deleteMany({});
-  await client.securityNotes.deleteMany({});
   await client.sessions.deleteMany({});
   await client.users.deleteMany({});
 }
